@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="IntecsusApplication.Presentacion.Mensaje"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:IntecsusApplication.Presentacion"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" 
+             d:DesignWidth="580">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="txtTitulo" Grid.Row="0" FontFamily="DIN Alternate Black" FontSize="27" TextWrapping="Wrap" TextAlignment="Center" Margin="20" Width="450"/>
+        <TextBlock Name="txtMensaje" Grid.Row="1" FontFamily="DIN Alternate Medium" FontSize="27" TextWrapping="Wrap" TextAlignment="Center" Margin="20" Width="450"/>
+        <Button Name ="btnSi" Grid.Row="2" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Margin="20" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="DIN Alternate Medium" FontSize="22" Height="50" Width="120" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnSi_Click">Si</Button>
+        <Button Name ="btnNo" Grid.Row="2" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Margin="20" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="DIN Alternate Medium" FontSize="22" Height="50" Width="120" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnNo_Click">No</Button>
+    </Grid>
+</UserControl>

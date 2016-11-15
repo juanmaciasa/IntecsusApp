@@ -11,20 +11,22 @@
     <UserControl.Background>
         <ImageBrush ImageSource="/IntecsusApplication;component/Resources/Fondos/HOME.jpg" Stretch="UniformToFill"/>
     </UserControl.Background>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="130*"/>
-            <RowDefinition Height="500*"/>
-        </Grid.RowDefinitions>
-        <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/HOME.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <TextBox Grid.Row="1" Margin="0 15 0 0" x:Name="txtCedula" HorizontalAlignment="Center" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Número de identificación" Height="90" 
+    <materialDesign:DialogHost Identifier="RootDialog">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130*"/>
+                <RowDefinition Height="500*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/HOME.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
+            <TextBox Grid.Row="1" Margin="0 15 0 0" x:Name="txtCedula" HorizontalAlignment="Center" VerticalAlignment="Top" materialDesign:HintAssist.Hint="Número de identificación" Height="90" 
                  Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.HintOpacity=".8" materialDesign:HintAssist.FloatingScale="0.6" materialDesign:HintAssist.FloatingOffset="1 -30" FontSize="36" FontFamily="DIN Alternate Medium"></TextBox>
-        <r:TecladoNumerico x:Name="tNumerico" Grid.Row="1" Width="320" Height="370"></r:TecladoNumerico>
-        <Button Grid.Row="1" Margin="0 0 20 20" x:Name="btnAceptar" Content="Aceptar" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="80" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnAceptar_Click"/>
-        <Button Grid.Row="1" Margin="20 0 0 20" x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="80" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnVolver_Click"/>
-    </Grid>
+            <r:TecladoNumerico x:Name="tNumerico" Grid.Row="1" Width="320" Height="370"></r:TecladoNumerico>
+            <Button Grid.Row="1" Margin="0 0 20 20" x:Name="btnAceptar" Content="Aceptar" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="80" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnAceptar_Click"/>
+            <Button Grid.Row="1" Margin="20 0 0 20" x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="80" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnVolver_Click"/>
+        </Grid>
+    </materialDesign:DialogHost>
 </UserControl>

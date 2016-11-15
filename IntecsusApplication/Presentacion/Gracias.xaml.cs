@@ -16,21 +16,24 @@ using System.Windows.Shapes;
 namespace IntecsusApplication.Presentacion
 {
     /// <summary>
-    /// Lógica de interacción para VerificaDatos.xaml
+    /// Lógica de interacción para Gracias.xaml
     /// </summary>
-    public partial class VerificaDatos : UserControl
+    public partial class Gracias : UserControl
     {
-        public VerificaDatos()
+        public Gracias(bool imprimio)
         {
             InitializeComponent();
-            txtNombres.Text = "Juan Sebastian";
-            txtApellidos.Text = "Macias Arias";
-            txtIdentificacion.Text = "1030603765";
+            if (!imprimio)
+            {
+                txtTarjeta.Visibility = Visibility.Collapsed;
+            }
+            cierra();
         }
 
-        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        private async void cierra()
         {
-            Switcher.Switch(new SolicitaIngreso());
+            await Task.Delay(2000);
+            Switcher.Switch(new Home());
         }
     }
 }
