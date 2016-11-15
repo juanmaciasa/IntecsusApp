@@ -19,7 +19,7 @@
         <TextBlock Grid.Row="1" Name="txtNombre" FontFamily="DIN Alternate Medium" FontSize="27" TextWrapping="Wrap" TextAlignment="Center" Margin="20" Width="450" Text="Juan Sebastian Macias Arias"/>
         <TextBlock Grid.Row="2" Name="txtIdentificacion" FontFamily="DIN Alternate Medium" FontSize="27" TextWrapping="Wrap" TextAlignment="Center" Margin="20" Width="450" Text="CC.: 1030603765"/>
         <TextBlock Grid.Row="3" FontFamily="DIN Alternate Medium" FontSize="27" TextWrapping="Wrap" TextAlignment="Center" Margin="20" Width="450" Text="¿Es correcto?"/>
-        <Button Name ="btnSi" Grid.Row="4" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Margin="20" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="DIN Alternate Medium" FontSize="22" Height="50" Width="120" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnSi_Click">Si</Button>
-        <Button Name ="btnNo" Grid.Row="4" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Margin="20" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="DIN Alternate Medium" FontSize="22" Height="50" Width="120" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnNo_Click">No</Button>
+        <Button Name ="btnSi" Grid.Row="4" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Margin="20" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="DIN Alternate Medium" FontSize="29" Height="50" Width="150" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnSi_Click" Foreground="White">Si</Button>
+        <Button Name ="btnNo" Grid.Row="4" Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}" Margin="20" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="DIN Alternate Medium" FontSize="29" Height="50" Width="150" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnNo_Click" Foreground="White">No</Button>
     </Grid>
 </UserControl>
