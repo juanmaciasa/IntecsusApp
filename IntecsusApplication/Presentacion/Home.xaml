@@ -15,7 +15,11 @@
             <RowDefinition Height="130*"/>
             <RowDefinition Height="500*"/>
         </Grid.RowDefinitions>
-        <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/HOME.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform"></Image>
+        <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/HOME.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+            <Image.Effect>
+                <DropShadowEffect/>
+            </Image.Effect>
+        </Image>
         <Button Grid.Row="1" x:Name="btnPedido" Content="Reclame su Gold Card" HorizontalAlignment="Center" VerticalAlignment="Center" Width="380" Height="100" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnPedido_Click"/>
         <Button Grid.Row="1" Name="btnIdioma" Content="Español" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="70" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Margin="20 0 0 20" />
     </Grid>

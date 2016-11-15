@@ -16,24 +16,21 @@ using System.Windows.Shapes;
 namespace IntecsusApplication.Presentacion
 {
     /// <summary>
-    /// Lógica de interacción para SolicitaIngreso.xaml
+    /// Lógica de interacción para VerificaDatos.xaml
     /// </summary>
-    public partial class SolicitaIngreso : UserControl
+    public partial class VerificaDatos : UserControl
     {
-        public SolicitaIngreso()
+        public VerificaDatos()
         {
             InitializeComponent();
-            tNumerico.TxtFoco = txtCedula;
+            txtNombres.Text = "Juan Sebastian";
+            txtApellidos.Text = "Macias Arias";
+            txtIdentificacion.Text = "1030603765";
         }
 
         private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
-            Switcher.Switch(new Home());
-        }
-
-        private void btnAceptar_Click(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new VerificaDatos());
+            Switcher.Switch(new SolicitaIngreso());
         }
     }
 }
