@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IntecsusApplication.Controladores;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,7 @@ namespace IntecsusApplication.Presentacion
         private async void imprime()
         {
             await Task.Delay(2000);
+            string respuesta = DataCard.printCard();
             btn.Command.Execute(null);
         }
     }
