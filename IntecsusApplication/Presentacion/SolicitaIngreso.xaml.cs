@@ -43,7 +43,7 @@ namespace IntecsusApplication.Presentacion
             if (((ValidaDatos)eventArgs.Session.Content).Opcion)
             {
                 await Task.Delay(500);
-                Mensaje m = new Mensaje("¿Desea reclamar su Gold Card?", "Recuerde que una vez usted confirme la emisión de su tarjeta, se hará responsable de la misma");
+                Mensaje m = new Mensaje("¿Desea reclamar su Golf Card?", "Recuerde que una vez usted confirme la emisión de su tarjeta, se hará responsable de la misma");
                 var result = await DialogHost.Show(m, "RootDialog", cierraMensaje);
             }
             else
@@ -57,7 +57,7 @@ namespace IntecsusApplication.Presentacion
             if (((Mensaje)eventArgs.Session.Content).Opcion)
             {
                 await Task.Delay(500);
-                Imprimiendo i = new Imprimiendo();
+                Imprimiendo i = new Imprimiendo("Juan Sebastián Macías Arias", "CC.: 1030603765");
                 var result = await DialogHost.Show(i, "RootDialog", cierraImprimiendo);
             }
             else

@@ -16,23 +16,15 @@ using System.Windows.Shapes;
 namespace IntecsusApplication.Presentacion
 {
     /// <summary>
-    /// Lógica de interacción para Home.xaml
+    /// Lógica de interacción para Impresion.xaml
     /// </summary>
-    public partial class Home : UserControl
+    public partial class Impresion : UserControl
     {
-        public Home()
+        public Impresion(string nombre, string cedula)
         {
             InitializeComponent();
-        }
-
-        private void btnPedido_Click(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new SolicitaIngreso());
-        }
-
-        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
-        {
-
+            txtNombre.Text = nombre;
+            txtCedula.Text = cedula;
         }
     }
 }

@@ -16,21 +16,16 @@ using System.Windows.Shapes;
 namespace IntecsusApplication.Presentacion
 {
     /// <summary>
-    /// Lógica de interacción para Home.xaml
+    /// Lógica de interacción para Registro.xaml
     /// </summary>
-    public partial class Home : UserControl
+    public partial class Registro : UserControl
     {
-        public Home()
+        public Registro()
         {
             InitializeComponent();
         }
 
-        private void btnPedido_Click(object sender, RoutedEventArgs e)
-        {
-            Switcher.Switch(new SolicitaIngreso());
-        }
-
-        private void btnRegistrar_Click(object sender, RoutedEventArgs e)
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
         {
 
         }

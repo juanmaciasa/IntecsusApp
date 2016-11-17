@@ -1,7 +1,9 @@
 ﻿using IntecsusApplication.Controladores;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
+using System.Printing;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -21,17 +23,49 @@ namespace IntecsusApplication.Presentacion
     /// </summary>
     public partial class Imprimiendo : UserControl
     {
-        public Imprimiendo()
+        private string Nombre, Cedula;
+        public Imprimiendo(string nombre, string cedula)
         {
             InitializeComponent();
+            Nombre = nombre;
+            Cedula = cedula;
             imprime();
         }
 
-        private async void imprime()
+        private void imprime()
         {
-            await Task.Delay(2000);
-            string respuesta = DataCard.printCard();
+            Impresion i = new Impresion(Nombre, Cedula);
+            ImprimeCanvas.imprime(i.printCanvas);
+            BackgroundWorker bw = new BackgroundWorker();
+            bw.RunWorkerCompleted += Bw_RunWorkerCompleted;
+            bw.DoWork += Bw_DoWork;
+            bw.RunWorkerAsync();
+        }
+
+        private void Bw_DoWork(object sender, DoWorkEventArgs e)
+        {
+            int numberOfJobs = 1;
+            LocalPrintServer server = new LocalPrintServer();
+            PrintQueueCollection queueCollection;
+            PrintQueue printQueue = null;
+            while (numberOfJobs != 0)
+            {
+                queueCollection = server.GetPrintQueues();
+                foreach (PrintQueue pq in queueCollection)
+                {
+                    if (pq.FullName == "XPS Card Printer")
+                        printQueue = pq;
+                }
+
+                if (printQueue != null)
+                    numberOfJobs = printQueue.NumberOfJobs;
+            }
+        }
+
+        private void Bw_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
+        {
             btn.Command.Execute(null);
         }
     }
 }
+
