@@ -6,10 +6,7 @@
              xmlns:local="clr-namespace:IntecsusApplication.Presentacion"
              xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
              mc:Ignorable="d" 
-             d:DesignHeight="768" d:DesignWidth="1366" Name="ucHome">
-    <UserControl.Background>
-        <ImageBrush ImageSource="/IntecsusApplication;component/Resources/Fondos/HOME.jpg" Stretch="UniformToFill"/>
-    </UserControl.Background>
+             d:DesignHeight="768" d:DesignWidth="1366" Name="ucHome" Background="White">
     <Grid>
         <TextBlock Text="Gracias" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="DIN Alternate Black" FontSize="80"></TextBlock>
         <TextBlock Name="txtTarjeta" Text="Recuerde retirar su tarjeta" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="DIN Alternate Light" FontSize="50" Margin="0 150 0 0"></TextBlock>

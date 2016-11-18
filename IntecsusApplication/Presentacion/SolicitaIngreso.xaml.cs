@@ -50,8 +50,8 @@ namespace IntecsusApplication.Presentacion
                 }
                 if (personaConsultada != null)
                 {
-                    ValidaDatos v = new ValidaDatos(personaConsultada.Nombre + " " + personaConsultada.Apellido, "CC.: " + personaConsultada.NumIdentificacion);
-                    var result = await DialogHost.Show(v, "RootDialog", cierraValidaDatos);
+                    Mensaje m = new Mensaje("Por favor valide sus datos", personaConsultada.Nombre + " " + personaConsultada.Apellido + " con CC.: " + personaConsultada.NumIdentificacion + " ¿Es correcto?");
+                    var result = await DialogHost.Show(m, "RootDialog", cierraMensajeEncontrado);
                 }
                 else
                 {
@@ -73,9 +73,9 @@ namespace IntecsusApplication.Presentacion
             }
         }
 
-        private async void cierraValidaDatos(object sender, DialogClosingEventArgs eventArgs)
+        private async void cierraMensajeEncontrado(object sender, DialogClosingEventArgs eventArgs)
         {
-            if (((ValidaDatos)eventArgs.Session.Content).Opcion)
+            if (((Mensaje)eventArgs.Session.Content).Opcion)
             {
                 await Task.Delay(500);
                 Mensaje m = new Mensaje("¿Desea reclamar su Golf Card?", "Recuerde que una vez usted confirme la emisión de su tarjeta, se hará responsable de la misma");
@@ -84,6 +84,7 @@ namespace IntecsusApplication.Presentacion
             else
             {
                 txtCedula.Clear();
+                personaConsultada = null;
             }
         }
 

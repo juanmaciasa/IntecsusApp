@@ -9,7 +9,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="768" d:DesignWidth="1366" Name="ucHome">
     <UserControl.Background>
-        <ImageBrush ImageSource="/IntecsusApplication;component/Resources/Fondos/HOME.jpg" Stretch="UniformToFill"/>
+        <ImageBrush ImageSource="/IntecsusApplication;component/Resources/Fondos/02.jpg" Stretch="UniformToFill"/>
     </UserControl.Background>
     <materialDesign:DialogHost Identifier="RootDialog">
         <Grid>
@@ -17,7 +17,7 @@
                 <RowDefinition Height="130*"/>
                 <RowDefinition Height="500*"/>
             </Grid.RowDefinitions>
-            <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/HOME.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+            <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/banner.jpg" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
                 <Image.Effect>
                     <DropShadowEffect/>
                 </Image.Effect>
