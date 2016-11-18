@@ -78,6 +78,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Controladores\ImprimeCanvas.cs" />
+    <Compile Include="Logica\Persona.cs" />
+    <Compile Include="Persistencia\PersonasDAO.cs" />
     <Compile Include="Presentacion\Gracias.xaml.cs">
       <DependentUpon>Gracias.xaml</DependentUpon>
     </Compile>

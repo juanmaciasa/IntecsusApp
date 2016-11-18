@@ -1,4 +1,6 @@
-﻿using MaterialDesignThemes.Wpf;
+﻿using IntecsusApplication.Logica;
+using IntecsusApplication.Persistencia;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,6 +23,7 @@ namespace IntecsusApplication.Presentacion
     /// </summary>
     public partial class SolicitaIngreso : UserControl
     {
+        Persona personaConsultada;
         public SolicitaIngreso()
         {
             InitializeComponent();
@@ -34,12 +37,44 @@ namespace IntecsusApplication.Presentacion
 
         private async void btnAceptar_Click(object sender, RoutedEventArgs e)
         {
-            ValidaDatos v = new ValidaDatos("Juan Sebastian Macias Arias", "CC.: 1030603765");
-            var result = await DialogHost.Show(v, "RootDialog", cierraValidaDatos);
+            if (txtCedula.Text.Length > 0)
+            {
+                PersonasDAO pdao = new PersonasDAO();
+                List<Persona> personas = pdao.consultaPersonas();
+                IEnumerable<Persona> personasLinq = from Persona in personas
+                                                    where Persona.NumIdentificacion == txtCedula.Text
+                                                    select Persona;
+                foreach (Persona per in personasLinq)
+                {
+                    personaConsultada = per;
+                }
+                if (personaConsultada != null)
+                {
+                    ValidaDatos v = new ValidaDatos(personaConsultada.Nombre + " " + personaConsultada.Apellido, "CC.: " + personaConsultada.NumIdentificacion);
+                    var result = await DialogHost.Show(v, "RootDialog", cierraValidaDatos);
+                }
+                else
+                {
+                    Mensaje m = new Presentacion.Mensaje("INFORMACION NO ENCONTRADA", "El documento con número de identificacion " + txtCedula.Text + " no se encuentra registrado, ¿Desea registrarse?");
+                    var result = await DialogHost.Show(m, "RootDialog", cierraMensajeNoEncontrado);
+                }
+            }
+        }
+
+        private void cierraMensajeNoEncontrado(object sender, DialogClosingEventArgs eventArgs)
+        {
+            if (((Mensaje)eventArgs.Session.Content).Opcion)
+            {
+                Switcher.Switch(new Registro(txtCedula.Text));
+            }
+            else
+            {
+                Switcher.Switch(new Home());
+            }
         }
 
         private async void cierraValidaDatos(object sender, DialogClosingEventArgs eventArgs)
-        { 
+        {
             if (((ValidaDatos)eventArgs.Session.Content).Opcion)
             {
                 await Task.Delay(500);
@@ -57,7 +92,7 @@ namespace IntecsusApplication.Presentacion
             if (((Mensaje)eventArgs.Session.Content).Opcion)
             {
                 await Task.Delay(500);
-                Imprimiendo i = new Imprimiendo("Juan Sebastián Macías Arias", "CC.: 1030603765");
+                Imprimiendo i = new Imprimiendo(personaConsultada.Nombre + " " + personaConsultada.Apellido, "CC.: " + personaConsultada.NumIdentificacion);
                 var result = await DialogHost.Show(i, "RootDialog", cierraImprimiendo);
             }
             else

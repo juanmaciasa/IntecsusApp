@@ -27,211 +27,211 @@
             <ColumnDefinition/>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button Grid.Row="0" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Opacity="0.90" Click="Button_Click" >
+        <Button Grid.Row="0" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Opacity="0.90" Click="Button_Click" Tag="1">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="1" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="2">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="2" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="3">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="3" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="4">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="4" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="5">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="5" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="6">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="6" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="7">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="7" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="8">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="8" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="9">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="9" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="0" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="0" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="0">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="0" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="1" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="q">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="q" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="w">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="w" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="e">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="e" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="r">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="r" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="t">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="t" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="y">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="y" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="u">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="u" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="i">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="i" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="o">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="o" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="1" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="1" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="p">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="p" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="2" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="a">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="a" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="s">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="s" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="d">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="d" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="f">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="f" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="g">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="g" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="h">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="h" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="j">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="j" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="k">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="k" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="l">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="l" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="2" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="2" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="ñ">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="ñ" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="3" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="0" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="z">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="z" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="1" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="x">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="x" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="c">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="c" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="3" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="v">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="v" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="4" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="b">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="b" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="n">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="n" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="m">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="m" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="7" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag=".">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="." Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="8" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="-">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="-" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="3" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="3" Grid.Column="9" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="_">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text="_" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
 
-        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="btnBorrar_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="btnMayus_Click" Opacity="0.90">
             <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="50">
                 <Grid>
                     <Grid Width="128" Height="128" Visibility="Collapsed" />
@@ -248,12 +248,17 @@
                 </Grid>
             </Viewbox>
         </Button>
-        <Button Grid.Row="4" Grid.Column="2" Grid.ColumnSpan="6" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="4" Grid.Column="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag="@">
+            <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBlock Text="@" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+            </Viewbox>
+        </Button>
+        <Button Grid.Row="4" Grid.Column="3" Grid.ColumnSpan="5" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="Button_Click" Opacity="0.90" Tag=" ">
             <Viewbox HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock Text=" " Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
             </Viewbox>
         </Button>
-        <Button Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="btnBorrar_Click" Opacity="0.90" Foreground="White">
+        <Button Grid.Row="4" Grid.Column="8" Grid.ColumnSpan="2" Margin="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="Auto" Height="Auto" Click="btnBorrar_Click" Opacity="0.90">
             <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" HorizontalAlignment="Center" VerticalAlignment="Center" Height="50" Width="50">
                 <Grid>
                     <Grid Width="128" Height="128" Visibility="Collapsed" />

@@ -32,7 +32,7 @@ namespace IntecsusApplication.Presentacion
 
         private void btnRegistrar_Click(object sender, RoutedEventArgs e)
         {
-
+            Switcher.Switch(new Registro());
         }
     }
 }

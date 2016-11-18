@@ -11,17 +11,108 @@
     <UserControl.Background>
         <ImageBrush ImageSource="/IntecsusApplication;component/Resources/Fondos/HOME.jpg" Stretch="UniformToFill"/>
     </UserControl.Background>
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="130*"/>
-            <RowDefinition Height="500*"/>
-        </Grid.RowDefinitions>
-        <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/HOME.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
-            <Image.Effect>
-                <DropShadowEffect/>
-            </Image.Effect>
-        </Image>
-        <Button Grid.Row="1" Margin="20 0 0 20" x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="80" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnVolver_Click"/>
-        <r:TecladoAlfa Grid.Row="1" Width="1100" Height="270" Margin="0 80 0 0"></r:TecladoAlfa>
-    </Grid>
+    <materialDesign:DialogHost Identifier="RootDialog">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130*"/>
+                <RowDefinition Height="500*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Grid.RowSpan="2" Source="/IntecsusApplication;component/Resources/Banner/HOME.png" HorizontalAlignment="Left" VerticalAlignment="Top" Stretch="Uniform">
+                <Image.Effect>
+                    <DropShadowEffect/>
+                </Image.Effect>
+            </Image>
+            <Grid Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="760" Height="130" Margin="0 0 0 370">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <Viewbox Grid.Column="0" Grid.Row="0" Margin="5">
+                    <Grid>
+                        <Grid Width="128" Height="128" Visibility="Collapsed" />
+                        <Path Data="M19.319,24.829005L19.319,26.644008 29.736008,26.644008 29.736008,24.829005z M19.319,21.409999L19.319,23.223002 29.736008,23.223002 29.736008,21.409999z M19.319,17.937999L19.319,19.751994 26.298004,19.751994 26.298004,17.937999z M8.2610016,14.443003L9.7319946,14.443003C11.182999,15.478006 12.955002,16.096995 14.869003,16.096995 15.180008,16.096995 15.486008,16.074 15.787994,16.042994L15.787994,27.631007C15.787994,27.924998,15.848007,28.202998,15.942001,28.465999L1.651001,28.465999C0.73899841,28.465999,0,27.723994,0,26.812007L0,25.958003 0,23.799998 0,22.704997C0,18.141002,3.6990051,14.443003,8.2610016,14.443003z M27.471008,11.032998L32,15.713007 27.940002,15.713007C27.682999,15.713007,27.471008,15.501001,27.471008,15.243998z M18.274002,11.032998L23.832001,11.032998 26.638,11.032998 26.638,15.243998C26.638,15.963007,27.222,16.544993,27.940002,16.544993L32,16.544993 32,18.258006 32,27.631007C32,28.092006,31.626007,28.465999,31.167007,28.465999L18.275009,28.465999 18.274002,28.465999C17.813995,28.465999,17.440994,28.092006,17.440994,27.631007L17.440994,11.865C17.440994,11.406,17.813995,11.032998,18.274002,11.032998z M14.869003,0C18.856995,4.774347E-08 22.091995,3.2309956 22.091995,7.2230005 22.091995,7.9730005 21.977005,8.6969995 21.763,9.3799982L18.272995,9.3799982C16.903,9.3799982,15.787994,10.495004,15.787994,11.863993L15.787994,14.378C15.486008,14.417002 15.181,14.443003 14.869003,14.443003 10.880005,14.443003 7.6470032,11.210001 7.6470032,7.2230005 7.6470032,3.2309956 10.880005,4.774347E-08 14.869003,0z" Stretch="Uniform" Fill="#FF6C6C6C" Width="68" Height="68" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="0.6" ScaleY="0.6" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Grid.Column="1" >
+                    <TextBox x:Name="txtNombres" materialDesign:HintAssist.Hint="Nombres" Height="90" Width="420" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.HintOpacity=".5" materialDesign:HintAssist.FloatingScale="0.6" materialDesign:HintAssist.FloatingOffset="1 -30" FontSize="36" FontFamily="DIN Alternate Medium" GotFocus="txt_GotFocus"></TextBox>
+                </Viewbox>
+                <Viewbox Grid.Column="2" Grid.Row="0" Margin="25 5 5 5">
+                    <Grid>
+                        <Grid Width="128" Height="128" Visibility="Collapsed" />
+                        <Path Data="M19.319,24.829005L19.319,26.644008 29.736008,26.644008 29.736008,24.829005z M19.319,21.409999L19.319,23.223002 29.736008,23.223002 29.736008,21.409999z M19.319,17.937999L19.319,19.751994 26.298004,19.751994 26.298004,17.937999z M8.2610016,14.443003L9.7319946,14.443003C11.182999,15.478006 12.955002,16.096995 14.869003,16.096995 15.180008,16.096995 15.486008,16.074 15.787994,16.042994L15.787994,27.631007C15.787994,27.924998,15.848007,28.202998,15.942001,28.465999L1.651001,28.465999C0.73899841,28.465999,0,27.723994,0,26.812007L0,25.958003 0,23.799998 0,22.704997C0,18.141002,3.6990051,14.443003,8.2610016,14.443003z M27.471008,11.032998L32,15.713007 27.940002,15.713007C27.682999,15.713007,27.471008,15.501001,27.471008,15.243998z M18.274002,11.032998L23.832001,11.032998 26.638,11.032998 26.638,15.243998C26.638,15.963007,27.222,16.544993,27.940002,16.544993L32,16.544993 32,18.258006 32,27.631007C32,28.092006,31.626007,28.465999,31.167007,28.465999L18.275009,28.465999 18.274002,28.465999C17.813995,28.465999,17.440994,28.092006,17.440994,27.631007L17.440994,11.865C17.440994,11.406,17.813995,11.032998,18.274002,11.032998z M14.869003,0C18.856995,4.774347E-08 22.091995,3.2309956 22.091995,7.2230005 22.091995,7.9730005 21.977005,8.6969995 21.763,9.3799982L18.272995,9.3799982C16.903,9.3799982,15.787994,10.495004,15.787994,11.863993L15.787994,14.378C15.486008,14.417002 15.181,14.443003 14.869003,14.443003 10.880005,14.443003 7.6470032,11.210001 7.6470032,7.2230005 7.6470032,3.2309956 10.880005,4.774347E-08 14.869003,0z" Stretch="Uniform" Fill="#FF6C6C6C" Width="68" Height="68" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="0.6" ScaleY="0.6" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Grid.Row="0" Grid.Column="4">
+                    <TextBox x:Name="txtApellidos" materialDesign:HintAssist.Hint="Apellidos" Height="90" Width="420" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.HintOpacity=".5" materialDesign:HintAssist.FloatingScale="0.6" materialDesign:HintAssist.FloatingOffset="1 -30" FontSize="36" FontFamily="DIN Alternate Medium" GotFocus="txt_GotFocus"></TextBox>
+                </Viewbox>
+                <Viewbox Grid.Column="0" Grid.Row="1" Margin="5">
+                    <Grid>
+                        <Grid Width="128" Height="128" Visibility="Collapsed" />
+                        <Path Data="M5.9810181,16.29601L13.981018,16.29601 13.981018,19.175983 5.9810181,19.175983z M20.716003,14.688009L23.143982,14.688009C25.60199,14.688009,27.658997,16.552999,28.197998,19.055988L15.661987,19.055988C16.202026,16.552999,18.257019,14.688009,20.716003,14.688009z M5.9810181,11.495995L13.981018,11.495995 13.981018,14.374992 5.9810181,14.374992z M21.929993,7.007991C23.736023,7.007991 25.197021,8.4730169 25.197021,10.274987 25.197021,12.08001 23.736023,13.542991 21.929993,13.542991 20.126038,13.542991 18.664001,12.08001 18.664001,10.274987 18.664001,8.4730169 20.126038,7.007991 21.929993,7.007991z M5.9810181,6.6950032L13.981018,6.6950032 13.981018,9.5750067 5.9810181,9.5750067z M3.223999,3.3330054L3.223999,22.554979 28.890015,22.554979 28.890015,3.3330054z M0,0L32,0 32,25.666 0,25.666z" Stretch="Uniform" Fill="#FF6C6C6C" Width="68" Height="68" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="0.6" ScaleY="0.6" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Grid.Row="1" Grid.Column="1">
+                    <TextBox x:Name="txtIdentificacion" materialDesign:HintAssist.Hint="Número de identificación" Height="90" Width="420" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.HintOpacity=".5" materialDesign:HintAssist.FloatingScale="0.6" materialDesign:HintAssist.FloatingOffset="1 -30" FontSize="36" FontFamily="DIN Alternate Medium" GotFocus="txt_GotFocus"></TextBox>
+                </Viewbox>
+                <Viewbox Grid.Column="2" Grid.Row="1" Margin="25 5 5 5">
+                    <Grid>
+                        <Grid Width="128" Height="128" Visibility="Collapsed" />
+                        <Path Data="M0.0060119629,0L32,0 15.987,10.083973z M0.0050048828,0L0.0060119629,0 16.001984,13.281967 32,0 31.899994,19.054971 31.776001,19.015969 31.89801,19.085 0.0050048828,19.085 0.15600586,18.999001 0,19.054971z" Stretch="Uniform" Fill="#FF6C6C6C" Width="68" Height="68" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+                            <Path.RenderTransform>
+                                <TransformGroup>
+                                    <TransformGroup.Children>
+                                        <RotateTransform Angle="0" />
+                                        <ScaleTransform ScaleX="0.6" ScaleY="0.6" />
+                                    </TransformGroup.Children>
+                                </TransformGroup>
+                            </Path.RenderTransform>
+                        </Path>
+                    </Grid>
+                </Viewbox>
+                <Viewbox Grid.Row="1" Grid.Column="4">
+                    <TextBox x:Name="txtEmail" materialDesign:HintAssist.Hint="Correo electrónico" Height="90" Width="420" HorizontalAlignment="Left" VerticalAlignment="Top"
+                 Style="{StaticResource MaterialDesignFloatingHintTextBox}" materialDesign:HintAssist.HintOpacity=".5" materialDesign:HintAssist.FloatingScale="0.6" materialDesign:HintAssist.FloatingOffset="1 -30" FontSize="36" FontFamily="DIN Alternate Medium" GotFocus="txt_GotFocus"></TextBox>
+                </Viewbox>
+            </Grid>
+            <r:TecladoAlfa x:Name="tecladoAlfa" Grid.Row="1" Width="1100" Height="300" Margin="0 90 0 0"></r:TecladoAlfa>
+            <Button Grid.Row="1" Margin="20 0 0 20" x:Name="btnVolver" Content="Volver" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="200" Height="80" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnVolver_Click"/>
+            <Button Grid.Row="1" Margin="0 0 20 20" x:Name="btnAceptar" Content="Aceptar" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="200" Height="80" FontFamily="DIN Alternate Medium" FontSize="30" Opacity="0.90" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth4" Click="btnAceptar_Click"/>
+        </Grid>
+    </materialDesign:DialogHost>
 </UserControl>

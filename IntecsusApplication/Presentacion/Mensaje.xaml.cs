@@ -21,11 +21,16 @@ namespace IntecsusApplication.Presentacion
     public partial class Mensaje : UserControl
     {
         private bool opcion;
-        public Mensaje(string titulo, string texto)
+        public Mensaje(string titulo, string texto, bool siNo = true)
         {
             InitializeComponent();
             txtTitulo.Text = titulo;
             txtMensaje.Text = texto;
+            if (!siNo)
+            {
+                btnSi.Visibility = btnNo.Visibility = Visibility.Collapsed;
+                btnAceptar.Visibility = Visibility.Visible;
+            }
         }
 
         public bool Opcion
